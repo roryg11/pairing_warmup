@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('button').on('click', function(){
+  $('#randomize').on('click', function(){
     randomize();
   });
 });
@@ -47,7 +47,7 @@ function randomize(){
   }
   var context = {pairs: pairs}
   var html = template(context);
-  $('ul').append(html);
+  $('#students').prepend(html);
 }
 
 function shuffle(array){
